@@ -1,0 +1,107 @@
+{
+  "id": "661f20b9-9d57-45da-bf4b-51be1a11cc8f",
+  "version": "2.0",
+  "name": "hello-selenium-ide",
+  "url": "https://imdb.com",
+  "tests": [{
+    "id": "d9ea24df-10bd-452b-a129-1a5908adc1d9",
+    "name": "imdb-wandavision",
+    "commands": [{
+      "id": "e1c299d8-6c26-417c-b4f4-4ec081b6541f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.imdb.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8621e169-eb51-4b87-86a5-5c8374a44ddc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "771x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "217f82c4-f17d-4a56-afac-9981caf55982",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ae12e85-03df-427a-9e5b-453ea8a2c695",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "wandavision"
+    }, {
+      "id": "8a3f7ed7-2066-4551-8660-bd03b6f43fc2",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b76f5376-0966-45d6-a815-aaf28a4063c1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=WandaVision",
+      "targets": [
+        ["linkText=WandaVision", "linkText"],
+        ["css=.findSection:nth-child(3) .findResult:nth-child(1) > .result_text > a", "css:finder"],
+        ["xpath=//a[contains(text(),'WandaVision')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt9140560/?ref_=fn_al_tt_1')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'WandaVision')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "445826de-b3aa-4e4b-b573-8d13c88c4b0f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TRIVIA",
+      "targets": [
+        ["linkText=TRIVIA", "linkText"],
+        ["css=.quicklink:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'TRIVIA')]", "xpath:link"],
+        ["xpath=//div[@id='quicklinksMainSection']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/title/tt9140560/trivia?ref_=tt_ql_2')]", "xpath:href"],
+        ["xpath=//div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'TRIVIA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "62c5c555-23ef-40e6-948d-7a274fe97e47",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d9ea24df-10bd-452b-a129-1a5908adc1d9"]
+  }],
+  "urls": ["https://stackoverflow.com/", "https://imdb.com/"],
+  "plugins": []
+}

@@ -1,0 +1,171 @@
+{
+  "id": "21b0e333-8bd0-498c-bf29-a8e2194e62c7",
+  "version": "2.0",
+  "name": "hello-selenium-google",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "7c28e9f1-4a54-49cf-be56-60c578e66554",
+    "name": "search-devops-privacy",
+    "commands": [{
+      "id": "0cfa9d97-a677-4d69-aaae-ba170ad11da3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3231018-2582-4e18-9876-58c01a84877d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "771x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97a659e7-ee6c-41da-b98d-aeaa9805ce9b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "d77f608b-9d96-480c-841e-aea618bd130d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#introAgreeButton .RveJvd",
+      "targets": [
+        ["css=#introAgreeButton .RveJvd", "css:finder"],
+        ["xpath=//div[@id='introAgreeButton']/span/span", "xpath:idRelative"],
+        ["xpath=//form/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6967073-9c96-4843-8cca-47a768918d62",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec817736-54cd-4ee4-ac01-2ca255112594",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "devops"
+    }, {
+      "id": "a8256fa7-882f-4977-a3c8-d47959e57091",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "954e01af-0882-4650-818d-098cabedcee5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hlcw0c:nth-child(4) > .g:nth-child(1) .LC20lb > span",
+      "targets": [
+        ["css=.hlcw0c:nth-child(4) > .g:nth-child(1) .LC20lb > span", "css:finder"],
+        ["xpath=//div[@id='rso']/div[3]/div/div/div/a/h3/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/a/h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'DevOps - Wikipedia, la enciclopedia libre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9ea02407-c5d7-4c12-89e9-cf0367a9a764",
+    "name": "search-devops",
+    "commands": [{
+      "id": "8af18afb-4c0b-4d76-a906-ed85cf2ed4d3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48228d57-2e72-487d-9ae7-9d85a0594a73",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "771x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a4ab460-53ad-4bc0-95e6-653924e91d73",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a44edee7-467f-4805-a92e-b20631b2178d",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "devops"
+    }, {
+      "id": "6f2a46a6-ea1a-4bed-a449-71ebdbb4c875",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8dffa861-69ae-440e-8822-1052745cad38",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'DevOps - Wikipedia, la enciclopedia libre')]",
+      "targets": [
+        ["css=.hlcw0c:nth-child(4) > .g:nth-child(1) .LC20lb > span", "css:finder"],
+        ["xpath=//div[@id='rso']/div[3]/div/div/div/a/h3/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/a/h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'DevOps - Wikipedia, la enciclopedia libre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "22f5b841-b3e1-4433-9677-de8508e7745e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
